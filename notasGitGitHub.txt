@@ -1,0 +1,16 @@
+¿Cómo comenzar a seguir una carpeta con Git?
+git init
+
+¿Cómo ver el estado actual de la rama master?
+git status
+
+¿Cómo trackear o seguir un archivo con git?
+git add <filename>
+
+¿Cómo dejar de trackear o seguir un archivo en git?
+git rm --cached <filename>
+
+¿Cómo enviar los cambios de un archivo al repositorio?
+git commit -m "Mensaje de actualización"
+
+
