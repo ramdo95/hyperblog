@@ -1,3 +1,7 @@
+¿Cómo poner el nombre de usuario y correo en Git?
+git config --global user.email "tu@email.com"
+git config --global user.name "Tu Nombre"
+
 ¿Cómo comenzar a seguir una carpeta con Git?
 git init
 
@@ -10,7 +14,25 @@ git add <filename>
 ¿Cómo dejar de trackear o seguir un archivo en git?
 git rm --cached <filename>
 
+¿Cómo borrar definitivamente un archivo que esta en staging?
+git rm --force <filename>
+
+(Para más información ver imagen: Ciclo de vida o estados de los archivos)
+
 ¿Cómo enviar los cambios de un archivo al repositorio?
 git commit -m "Mensaje de actualización"
+
+¿Cómo ver todas las versiones o historia de un archivo?
+git log <filename>
+
+¿Cómo ver todas los cambios entre la versión actual y la anterior de un archivo?
+git show <filename>
+
+¿Cómo ver las diferencias o cambios entre dos versiones exactas de un archivo?
+git diff tagMenosReciente tagMásReciente
+
+¿Cómo volver a una versión en específico?
+git reset <tagCommitVersion> --soft (Borra todo de Git pero el archivo actual en el disco duro queda intacto)
+git reset <tagCommitVersion> --hard (Borra todo de Git y también del disco duro)
 
 
