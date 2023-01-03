@@ -106,3 +106,30 @@ git reset id-commit: Nos lleva a cualquier commit no importa la rama, ya que ide
 
 git checkout rama-o-id-commit: Nos lleva a cualquier commit sin borrar los commit posteriores al tag seleccionado.
 
+----------------------------------------------------------------------------------
+
+Si queremos conectar el repositorio de GitHub con nuestro repositorio local, que creamos usando el comando git init, debemos ejecutar las siguientes instrucciones:
+
+git remote add origin <URL>
+
+Ahora para subier nuestra rama master:
+
+git push origin master
+
+TOKEN UTILIZADO PARA LAS CLASES DE GIT Y GITHUB
+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
+
+Generar una nueva llave SSH: (Cualquier sistema operativo)
+
+ssh-keygen -t rsa -b 4096 -C "tu@email.com"
+
+Comprobar proceso y agregarlo (Windows)
+
+eval "$(ssh-agent - s)"
+ssh-copy-id "tu@email.com"
+
+¿Cómo ver los repositorios remotos a los que estamos conectados?
+git remote -v
+
+¿Cómo cambiar el repositorio remoto al que estamos conectados para push y fetch?
+git remote set-url origin <url>
